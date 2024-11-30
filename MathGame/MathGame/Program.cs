@@ -1,6 +1,4 @@
-﻿using System;
-using System.Timers;
-
+﻿
 Menu menu = new Menu(); 
 GameController gameController = new GameController();
 

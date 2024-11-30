@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
+﻿using System.Timers;
 public class ScoreManager
 {
     private static System.Timers.Timer? bonusTimer;
-    private int currentPoints = 0;
-    private bool hasBonus = false;
+    private int currentPoints;
+    private bool hasBonus;
 
     public void AddScore(int points)
     {
@@ -34,7 +29,6 @@ public class ScoreManager
 
     private void CancelBonus(Object source, ElapsedEventArgs e)
     {
-        //Console.WriteLine("\ntoo slow... no bonus for you");
         hasBonus = false;
     }
 
